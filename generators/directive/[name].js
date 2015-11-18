@@ -1,10 +1,13 @@
 angular.module('<%= module || name.camelCase %>').directive('<%= name.camelCase %>', function() {
-	return 'E',
-	templateUrl: '<%= templatePath %><%= name.camelCase %>.html',
-	link: function(scope, el, attrs) {
+	return {
+		restrict: 'E',
+		templateUrl: '<%= templatePath %><%= name.camelCase %>.html',
+		scope: {},
+		link: function(scope, el, attrs) {
 
-	},
-	controller: function($scope) {
+		},
+		controller: function($scope) {
 
+		}
 	}
 });
