@@ -1,1 +1,1 @@
-require('./<%= name.raw %>');
+module.exports = require('./<%= name.raw %>');
